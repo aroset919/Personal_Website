@@ -1,6 +1,6 @@
 import {Container, Navbar} from "react-bootstrap";
 import Brand from "./Brand.jsx";
-import Button from "./Button.jsx";
+import Button from "./DarkModeButton.jsx";
 import NavItems from "./NavItems.jsx";
 
 /*Navbar*/
