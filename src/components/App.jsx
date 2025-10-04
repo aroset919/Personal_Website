@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Container, Navbar, Nav, Button, Row, Col, Card, Badge } from "react-bootstrap";
+import { Container, Button, Row, Col, Card, Badge } from "react-bootstrap";
+import Navbar from "./Header/Navbar/Navbar.jsx";
 
 export default function App() {
   const [expanded, setExpanded] = useState(false);
@@ -23,30 +24,12 @@ export default function App() {
   return (
     <div className={darkMode ? "theme-dark" : "theme-light"}>
       {/* Navbar */}
-      <Navbar style={{ backgroundColor: "#023E8A" }} variant="dark" expand="md" expanded={expanded} className="shadow-sm sticky-top">
-        <Container>
-          <Navbar.Brand href="#home">Aleena Torres</Navbar.Brand>
-          <div className="d-flex align-items-center">
-            <Button
-              variant="outline-light"
-              size="sm"
-              className="me-2"
-              onClick={toggleTheme}
-            >
-              <i className={darkMode ? "bi bi-sun-fill" : "bi bi-moon-fill"}></i>
-            </Button>
-            <Navbar.Toggle onClick={() => setExpanded(expanded ? false : true)} />
-          </div>
-          <Navbar.Collapse>
-            <Nav className="ms-auto">
-              <Nav.Link href="#about" onClick={() => setExpanded(false)} className="theme-nav-link">About</Nav.Link>
-              <Nav.Link href="#projects" onClick={() => setExpanded(false)} className="theme-nav-link">Projects</Nav.Link>
-              <Nav.Link href="#skills" onClick={() => setExpanded(false)} className="theme-nav-link">Skills</Nav.Link>
-              <Nav.Link href="#contact" onClick={() => setExpanded(false)} className="theme-nav-link">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <Navbar 
+        darkMode={darkMode}
+        toggleTheme={toggleTheme}
+        expanded={expanded}
+        setExpanded={setExpanded}
+      />
 
       {/* Hero Section */}
       <section className="text-center py-5 hero-section">
