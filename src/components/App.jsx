@@ -4,7 +4,7 @@ import Hero from "./Header/Hero/Hero.jsx";
 import AboutMe from "./Content/AboutMe.jsx";
 import Projects from "./Content/Projects.jsx";
 import Skills from "./Content/Skills.jsx";
-import Contact from "./Footer/Contact.jsx";
+import Contact from "./Footer/Contact/Contact.jsx";
 import Footer from "./Footer/Footer.jsx";
 
 export default function App() {
