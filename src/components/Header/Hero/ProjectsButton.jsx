@@ -1,9 +1,9 @@
 import {Button} from "react-bootstrap";
 
-function ProjectsButton (){
+function ProjectsButton (props){
     return (
         <Button className="mt-3 fw-bold theme-button" href="#projects">
-            View My Work
+            {props.heroBtnText}
         </Button>
     );
 }

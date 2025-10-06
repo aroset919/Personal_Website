@@ -1,4 +1,5 @@
 import {Container, Badge} from "react-bootstrap";
+import Skill_Item from "./Skill_Item";
 
 /*Skills Section*/
 function Skills (){
@@ -7,12 +8,12 @@ function Skills (){
         <Container className="text-center">
           <h3>Skills</h3>
           <div className="mt-3 d-flex flex-wrap justify-content-center gap-2">
-            <Badge className="theme-badge">JavaScript</Badge>
-            <Badge className="theme-badge">Python</Badge>
-            <Badge className="theme-badge">React</Badge>
-            <Badge className="theme-badge">Node.js</Badge>
-            <Badge className="theme-badge">SQL</Badge>
-            <Badge className="theme-badge">Cybersecurity</Badge>
+            <Skill_Item skill="JavaScript" />
+            <Skill_Item skill="Python" />
+            <Skill_Item skill="React" />
+            <Skill_Item skill="Node.js" />
+            <Skill_Item skill="SQL" />
+            <Skill_Item skill="Cybersecurity" />
           </div>
         </Container>
       </section>

@@ -7,7 +7,10 @@ function Contact(props){
     return (
       <section id="contact" className="py-5 contact-section text-center">
         <Container>
-          <ContactHeader />
+          <ContactHeader 
+            contactTitleTxt = "Contact"
+            contactDescTxt = "Let’s connect! Feel free to reach out via email or LinkedIn."
+          />
           <div className="d-flex justify-content-center gap-4 mt-3">
             <ContactLink 
               link = "mailto:arose919@gmail.com"

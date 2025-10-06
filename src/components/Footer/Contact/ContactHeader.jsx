@@ -1,8 +1,8 @@
-function ContactHeader (){
+function ContactHeader (props){
     return (
         <div>
-            <h3>Contact</h3>
-            <p className="mt-3">Let’s connect! Feel free to reach out via email or LinkedIn.</p>  
+            <h3>{props.contactTitleTxt}</h3>
+            <p className="mt-3">{props.contactDescTxt}</p>  
         </div>
     );
 }
