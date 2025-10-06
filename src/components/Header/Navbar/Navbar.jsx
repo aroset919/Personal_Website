@@ -10,7 +10,10 @@ function HeaderNavbar (props){
         <Container>
           <Brand link = "#home" text = "Aleena Torres"/>
           <div className="d-flex align-items-center">
-            <Button />
+            <Button 
+              darkMode={props.darkMode}
+              toggleTheme={props.toggleTheme}
+            />
             <Navbar.Toggle onClick={() => props.setExpanded(props.expanded ? false : true)} />
           </div>
           <Navbar.Collapse>
