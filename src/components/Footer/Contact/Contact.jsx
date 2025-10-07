@@ -4,41 +4,32 @@ import ContactHeader from "./ContactHeader.jsx";
 
 /*Contact Section*/
 function Contact(props){
-    return (
-      <section id="contact" className="py-5 contact-section text-center">
-        <Container>
-          <ContactHeader 
-            contactTitleTxt = "Contact"
-            contactDescTxt = "Let’s connect! Feel free to reach out via email or LinkedIn."
-          />
-          <div className="d-flex justify-content-center gap-4 mt-3">
-            <ContactLink 
-              link = "mailto:arose919@gmail.com"
-              darkMode = {props.darkMode}
-              class = "bi-envelope-fill"
-              text = "Email"
-              mail = {true}
-            />
+  const contactArray = Object.entries(props.links);
 
-            <ContactLink 
-              link = "https://github.com/"
-              darkMode = {props.darkMode}
-              class = "bi-github"
-              text = "GitHub"
-              mail = {true}
-            />
-
-            <ContactLink 
-              link = "https://linkedin.com/"
-              darkMode = {props.darkMode}
-              class = "bi-linkedin"
-              text = "LinkedIn"
-              mail = {true}
-            />
-          </div>
-        </Container>
-      </section>
-    );
+  return (
+    <section id="contact" className="py-5 contact-section text-center">
+      <Container>
+        <ContactHeader 
+          contactTitleTxt = {props.info.title}
+          contactDescTxt = {props.info.content}
+        />
+        <div className="d-flex justify-content-center gap-4 mt-3">
+          {contactArray.map((link, index) =>{
+            return (
+              <ContactLink 
+                key = {index}
+                link = {link[1]}
+                darkMode = {props.darkMode}
+                class = "bi-envelope-fill"
+                text = {link[0]}
+                mail = {link[0] == "Email"}
+              />
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
 }
 
 export default Contact;

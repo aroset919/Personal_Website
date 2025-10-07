@@ -3,13 +3,13 @@ import ProjectButton from "./ProjectsButton.jsx";
 import Intro from "./Intro";
 
 /*Hero Section */
-function Hero (){
+function Hero (props){
     return (
         <section className="text-center py-5 hero-section">
             <Container>
                 <Intro 
-                    headerText="Hi, I’m Aleena 👋"
-                    descripText="I’m a Software Developer passionate about building innovative apps, solving problems, and exploring new technologies."
+                    headerText = {props.info.introHead}
+                    descripText= {props.info.introText}
                 />
                 <ProjectButton 
                     heroBtnText = "View My Work"

@@ -2,32 +2,25 @@ import {Container, Row} from "react-bootstrap";
 import Project_Item from "./Project_Item.jsx";
 
 /*Projects Section*/
-function Projects (){
+function Projects (props){
+    const projectArray = Object.values(props.info);
+
     return (
         <section id="projects" className="py-5 projects-section">
             <Container>
             <h3 className="text-center mb-4">Projects</h3>
             <Row>
-                <Project_Item 
-                    projectTitle="Project One"
-                    projectDesc="A web app that does amazing things."
-                    text="View on GitHub"
-                    link="#"
+                {projectArray.map((project, index) => {
+                return (
+                    <Project_Item 
+                    key={index}
+                    projectTitle={project.title}
+                    projectDesc={project.description}
+                    text={project.link_text}
+                    link={project.link}
                 />
-
-                <Project_Item
-                    projectTitle="Project Two"
-                    projectDesc="Another cool project with real-world impact."
-                    text="Live Demo"
-                    link="#"
-                />
-
-                <Project_Item
-                    projectTitle="Project Three"
-                    projectDesc="A creative coding experiment."
-                    text="View on GitHub"
-                    link="#"
-                />
+                );
+            })}
             </Row>
             </Container>
         </section>

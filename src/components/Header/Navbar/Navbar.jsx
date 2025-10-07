@@ -8,7 +8,7 @@ function HeaderNavbar (props){
     return(
       <Navbar style={{ backgroundColor: "#023E8A" }} variant="dark" expand="md" expanded={props.expanded} className="shadow-sm sticky-top">
         <Container>
-          <Brand link = "#home" text = "Aleena Torres"/>
+          <Brand link = "#home" text = {`${props.info.fName} ${props.info.lName}`}/>
           <div className="d-flex align-items-center">
             <Button 
               darkMode={props.darkMode}

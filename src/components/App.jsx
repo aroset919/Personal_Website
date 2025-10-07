@@ -6,6 +6,7 @@ import Projects from "./Content/Projects/Projects.jsx";
 import Skills from "./Content//Skills/Skills.jsx";
 import Contact from "./Footer/Contact/Contact.jsx";
 import Footer from "./Footer/Footer.jsx";
+import {Personal_Info, About_Me, Contact_Info, Contact_Links, Personal_Projects, My_Skills} from "./info.js";
 
 export default function App() {
   const [expanded, setExpanded] = useState(false);
@@ -34,13 +35,18 @@ export default function App() {
         toggleTheme={toggleTheme}
         expanded={expanded}
         setExpanded={setExpanded}
+        info = {Personal_Info}
       />
-      <Hero />
-      <AboutMe />
-      <Projects />
-      <Skills />
-      <Contact darkMode={darkMode}/>
-      <Footer />
+      <Hero info = {Personal_Info} />
+      <AboutMe info = {About_Me}/>
+      <Projects info = {Personal_Projects}/>
+      <Skills info = {My_Skills}/>
+      <Contact 
+        darkMode={darkMode}
+        info = {Contact_Info}
+        links = {Contact_Links}
+        />
+      <Footer info = {Personal_Info}/>
     </div>
   );
 }
