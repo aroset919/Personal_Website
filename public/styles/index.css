@@ -105,3 +105,31 @@ body {
   background-color: #33415C !important;
   color: #fff;
 }
+
+.hero-box-container {
+  perspective: 1000px; /* Essential for 3D effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px; /* Adjust as needed */
+}
+
+.hero-box {
+  width: 100%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-style: preserve-3d; /* Ensures child elements are rendered in 3D */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #669BBC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-box:hover {
+  transform: rotateY(15deg) rotateX(10deg) translateZ(20px); /* 3D rotation and translation on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+

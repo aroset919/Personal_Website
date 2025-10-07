@@ -1,19 +1,20 @@
-import {Container} from "react-bootstrap";
-import ProjectButton from "./ProjectsButton.jsx";
-import Intro from "./Intro";
+import {Container, Row, Col} from "react-bootstrap";
+import HeroImg from "./HeroImg.jsx";
+import HeroBox from "./HeroBox.jsx";
 
 /*Hero Section */
 function Hero (props){
     return (
         <section className="text-center py-5 hero-section">
-            <Container>
-                <Intro 
-                    headerText = {props.info.introHead}
-                    descripText= {props.info.introText}
-                />
-                <ProjectButton 
-                    heroBtnText = "View My Work"
-                />
+            <Container fluid>
+                <Row>
+                <Col  xs={12} sm={12} md={6}>
+                    <HeroImg />
+                </Col>
+                <Col  xs={12} sm={12} md={6}>
+                    <HeroBox info={props.info}/>
+                </Col>
+                </Row>
             </Container>
         </section>
     );
