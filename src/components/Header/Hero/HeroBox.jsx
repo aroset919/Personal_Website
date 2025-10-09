@@ -4,7 +4,7 @@ import Intro from "./Intro";
 
 function HeroBox (props) {
   return (
-    <div className="hero-box-container float-right">
+    <div className="hero-box-container">
       <Card className="hero-box">
         <Card.Body>
             <Intro

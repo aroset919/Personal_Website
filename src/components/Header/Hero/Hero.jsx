@@ -8,10 +8,10 @@ function Hero (props){
         <section className="text-center py-5 hero-section">
             <Container fluid>
                 <Row>
-                <Col  xs={12} sm={12} md={6}>
+                <Col  xs={12} sm={12} md={4}>
                     <HeroImg />
                 </Col>
-                <Col  xs={12} sm={12} md={6}>
+                <Col  xs={12} sm={12} md={8}>
                     <HeroBox info={props.info}/>
                 </Col>
                 </Row>

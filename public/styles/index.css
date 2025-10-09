@@ -9,7 +9,7 @@ body {
 }
 
 .theme-light {
-  background-color: #E7ECEF;
+  background-color: #e6eef3;
   color: #000;
 }
 
@@ -17,6 +17,7 @@ body {
   background-color: #03045E !important;
   color: #fff;
   transition: background-color 0.5s ease;
+  box-shadow: inset 0px -5px 10px -5px #7393B3;
 }
 
 .projects-section {
@@ -106,30 +107,38 @@ body {
   color: #fff;
 }
 
+.heroImg {
+  max-width: 90%;
+  margin: 1.5rem;
+  margin-bottom: 0;
+}
+
 .hero-box-container {
   perspective: 1000px; /* Essential for 3D effect */
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 300px; /* Adjust as needed */
+  padding: 1.5rem;
 }
 
 .hero-box {
   width: 100%;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transform-style: preserve-3d; /* Ensures child elements are rendered in 3D */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   background-color: #669BBC;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1.5rem;
 }
 
 .hero-box:hover {
   transform: rotateY(15deg) rotateX(10deg) translateZ(20px); /* 3D rotation and translation on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
 }
 
 
