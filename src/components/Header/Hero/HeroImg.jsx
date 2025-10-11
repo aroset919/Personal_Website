@@ -4,7 +4,7 @@ function HeroImg (){
     return(
         <Image src="/src/assets/profile-pic.jpg" 
             alt="Profile pic" 
-            className="float-left heroImg" thumbnail fluid/>
+            className="float-left heroImg" roundedCircle fluid/>
     );
 }
 

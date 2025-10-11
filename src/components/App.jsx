@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./Header/Navbar/Navbar.jsx";
 import Hero from "./Header/Hero/Hero.jsx";
-import AboutMe from "./Content/AboutMe.jsx";
+import AboutMe from "./Content/AboutMe/AboutMe.jsx";
 import Projects from "./Content/Projects/Projects.jsx";
 import Skills from "./Content//Skills/Skills.jsx";
 import Contact from "./Footer/Contact/Contact.jsx";

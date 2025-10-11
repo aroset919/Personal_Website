@@ -6,7 +6,7 @@ import NavItems from "./NavItems.jsx";
 /*Navbar*/
 function HeaderNavbar (props){
     return(
-      <Navbar style={{ backgroundColor: "#023E8A" }} variant="dark" expand="md" expanded={props.expanded} className="shadow-sm sticky-top">
+      <Navbar variant="dark" expand="md" expanded={props.expanded} className="shadow-sm sticky-top navbar">
         <Container>
           <Brand link = "#home" text = {`${props.info.fName} ${props.info.lName}`}/>
           <div className="d-flex align-items-center">

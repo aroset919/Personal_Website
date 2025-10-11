@@ -11,7 +11,6 @@ function HeroBox (props) {
                 headerText = {props.info.introHead}
                 descripText= {props.info.introText} 
             />
-
             <ProjectButton 
                 heroBtnText = "View My Work"
             />

@@ -2,12 +2,34 @@ const Personal_Info = {
     fName: "Aleena",
     lName: "Torres",
     introHead: `Hi I'm Aleena 👋`,
-    introText: "I’m a Software Developer passionate about building innovative apps, solving problems, and exploring new technologies.",
+    introText: "I’m a Software Developer passionate about building innovative apps, solving problems, and exploring new technologies. \
+                Come see if I could be a good fit for your team!",
 }
 
 const About_Me = {
     title: "About Me",
-    content: "I’m an entry-level software developer with experience in full-stack development, data analysis, and cybersecurity fundamentals. I enjoy building applications that combine creativity with functionality.",
+    content: {
+        s1: {
+            image: "/src/assets/gamejam.jpg",
+            alt: "Game Jam Group Photo",
+            text: "I’m an entry-level software developer with experience in full-stack development, SCRUM development cycle, and computer science fundamentals. \
+                I enjoy building applications that combine creativity with functionality.",
+        },
+        s2: {
+            image: "/src/assets/fullstack_udemy_assessment.jpg",
+            alt: "Udemy Test Score",
+            text: "My recent assessment on Udemy places me in in the 98th percentile of full-stack developers! \
+                Currently, I am aiming for my Master's Degree to enhance my skills.",
+        },
+        s3: {
+            image: "/src/assets/GREbook.jpg",
+            alt: "GRE Master's Test Prep Book",
+            text: "Currently, I am aiming for my Master's Degree. \
+                    I intend to take the opportunity to enhance my skills as a developer.",
+        },
+        
+        
+    },
 }
 
 const Contact_Info = {

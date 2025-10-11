@@ -13,8 +13,12 @@ body {
   color: #000;
 }
 
+.navbar{
+  background-color: #023E8A;
+}
+
 .hero-section {
-  background-color: #03045E !important;
+  background-color: #1b1c66 !important;
   color: #fff;
   transition: background-color 0.5s ease;
   box-shadow: inset 0px -5px 10px -5px #7393B3;
@@ -108,8 +112,8 @@ body {
 }
 
 .heroImg {
-  max-width: 90%;
-  margin: 1.5rem;
+  max-width: 85%;
+  margin: 1.25rem;
   margin-bottom: 0;
 }
 
@@ -118,7 +122,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 300px; /* Adjust as needed */
+  min-height: 100%; /* Adjust as needed */
   padding: 1.5rem;
 }
 
@@ -129,16 +133,45 @@ body {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   background-color: #669BBC;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 1.5rem;
+  font-size: 1.25em;
 }
 
 .hero-box:hover {
+  color: #000;
   transform: rotateY(15deg) rotateX(10deg) translateZ(20px); /* 3D rotation and translation on hover */
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+  filter: blur(0);
 }
 
+.aboutImg{
+  max-width: 90%;
+  max-height: 70%;
+  margin: 1.25rem;
+  margin-bottom: 0;
+}
 
+.aboutme-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme-section .row{
+  align-items: center;
+}
+
+.aboutme-section p{
+  text-align: left;
+}
+
+.aboutme-container{
+  margin: 0;
+
+}
