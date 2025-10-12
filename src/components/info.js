@@ -46,22 +46,20 @@ const Contact_Links = {
 
 const Personal_Projects = {
     P1: {
-        title: "Project One",
-        description: "A web app that does amazing things.",
-        link: "#",
+        title: "Five Card Poker",
+        description: "A web app which allows the user to simulate a 5 card poker draw with 3 draws.",
+        image: "/src/assets/5CardPokerGame.jpg",
+        alt: "Site Pic",
+        link: "https://github.com/aroset919/5Card-Poker",
         link_text: "View on GitHub",
     },
     P2: {
-        title: "Project Two",
-        description: "Another cool project with real-world impact.",
-        link: "#",
-        link_text: "Live Demo",
-    },
-    P3: {
-        title: "Project Three",
-        description: "A creative coding experiment.",
-        link: "#",
-        link_text: "View on GitHub",      
+        title: "Hotel Olympia",
+        description: "A global game jam project where I worked with a team of people to build a game! One of my favorite projects!",
+        image: "/src/assets/hotelolympia.jpg",
+        alt: "Game Still",
+        link: "https://v3.globalgamejam.org/2020/games/hotel-olympia-4",
+        link_text: "Check it Out",
     },
 }
 
