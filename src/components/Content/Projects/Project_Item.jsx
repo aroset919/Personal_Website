@@ -12,6 +12,7 @@ function Project_Item (props){
                 img={props.image}
                 alt={props.alt}
             />
+            <br/>
             <Card.Link href={props.link} className="theme-link">{props.text}</Card.Link>
             </Card.Body>
         </Card>

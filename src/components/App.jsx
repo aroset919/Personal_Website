@@ -6,7 +6,7 @@ import Projects from "./Content/Projects/Projects.jsx";
 import Skills from "./Content//Skills/Skills.jsx";
 import Contact from "./Footer/Contact/Contact.jsx";
 import Footer from "./Footer/Footer.jsx";
-import {Personal_Info, About_Me, Contact_Info, Contact_Links, Personal_Projects, My_Skills} from "./info.js";
+import {Personal_Info, About_Me, Contact_Info, Contact_Links, Personal_Projects, Credited_Projects, My_Skills} from "./info.js";
 
 export default function App() {
   const [expanded, setExpanded] = useState(false);
@@ -39,7 +39,8 @@ export default function App() {
       />
       <Hero info = {Personal_Info} />
       <AboutMe info = {About_Me}/>
-      <Projects info = {Personal_Projects}/>
+      <Projects sectionTitle="Projects" info = {Personal_Projects}/>
+      <Projects sectionTitle="QA Credits" info={Credited_Projects}/>
       <Skills info = {My_Skills}/>
       <Contact 
         darkMode={darkMode}

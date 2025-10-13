@@ -63,6 +63,33 @@ const Personal_Projects = {
     },
 }
 
+const Credited_Projects = {
+    C1: {
+        title: "Rage 2",
+        description: "An Avalanche Studios game published by Bethesda Softworks",
+        image: "/src/assets/rage2gamecover.jpg",
+        alt: "Rage 2 Game Cover",
+        link: "https://bethesda.net/en/game/rage2",
+        link_text: "View on Site",
+    },
+    C2: {
+        title: "Wolfenstein: Youngblood",
+        description: "A first person shooter designed by Machine Games and published by Bethesda Softworks",
+        image: "/src/assets/wolfensteinybgamecover.jpg",
+        alt: "Wolfenstein-Youngblood Game Cover",
+        link: "https://bethesda.net/en/game/wolfenstein-youngblood",
+        link_text: "View on Site",
+    },
+    C3: {
+        title: "Fallout: 76",
+        description: "One of Beethesda Softworks most sucessful franchieses.",
+        image: "/src/assets/fallout76gamecover.jpg",
+        alt: "Fallout 76 Game Cover",
+        link: "https://fallout.bethesda.net/en",
+        link_text: "View on Site",
+    },
+}
+
 const My_Skills = [
     "JavaScript", 
     "Python", 
@@ -72,4 +99,4 @@ const My_Skills = [
     "Cybersecurity"
 ]
 
-export {Personal_Info, About_Me, Contact_Info, Contact_Links, Personal_Projects, My_Skills}
+export {Personal_Info, About_Me, Contact_Info, Contact_Links, Personal_Projects, Credited_Projects, My_Skills}
