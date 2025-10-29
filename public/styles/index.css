@@ -31,6 +31,7 @@ body {
 .theme-card {
   border: none;
   transition: background-color 0.3s ease, color 0.3s ease;
+  align-items: center;
 }
 
 .theme-dark .theme-card {
@@ -41,6 +42,16 @@ body {
 .theme-light .theme-card {
   background-color: #ffffff;
   color: #000;
+}
+
+.theme-card .card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.theme-card .projectImg{
+  margin: auto;
 }
 
 .theme-card .card-title {
