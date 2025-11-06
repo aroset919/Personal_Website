@@ -1,8 +1,9 @@
 import {Image} from "react-bootstrap";
+import profilePic from "/images/profile-pic.jpg";
 
 function HeroImg (){
     return(
-        <Image src="/src/assets/profile-pic.jpg" 
+        <Image src={profilePic} 
             alt="Profile pic" 
             className="float-left heroImg" roundedCircle fluid/>
     );
