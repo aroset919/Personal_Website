@@ -1,6 +1,7 @@
 import {Card} from "react-bootstrap";
 import ProjectButton from "./ProjectsButton.jsx";
 import Intro from "./Intro";
+import Skills from "../../Content/Skills/Skills.jsx";
 
 function HeroBox (props) {
   return (
@@ -11,9 +12,14 @@ function HeroBox (props) {
                 headerText = {props.info.introHead}
                 descripText= {props.info.introText} 
             />
-            <ProjectButton 
-                heroBtnText = "View My Work"
-            />
+            <div className="d-flex justify-content-center gap-3">
+              <ProjectButton 
+                  heroBtnText = "View My Work"
+              />
+              <Skills 
+                info={props.skillInfo}
+              />
+            </div>
         </Card.Body>
       </Card>
     </div>

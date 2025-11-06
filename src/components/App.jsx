@@ -35,19 +35,18 @@ export default function App() {
         toggleTheme={toggleTheme}
         expanded={expanded}
         setExpanded={setExpanded}
-        info = {Personal_Info}
+        info={Personal_Info}
       />
-      <Hero info = {Personal_Info} />
-      <AboutMe info = {About_Me}/>
-      <Projects sectionTitle="Projects" info = {Personal_Projects}/>
+      <Hero info={Personal_Info} skillInfo={My_Skills}/>
+      <AboutMe info={About_Me}/>
+      <Projects sectionTitle="Projects" info={Personal_Projects}/>
       <Projects sectionTitle="QA Credits" info={Credited_Projects}/>
-      <Skills info = {My_Skills}/>
       <Contact 
         darkMode={darkMode}
-        info = {Contact_Info}
-        links = {Contact_Links}
+        info={Contact_Info}
+        links={Contact_Links}
         />
-      <Footer info = {Personal_Info}/>
+      <Footer info={Personal_Info}/>
     </div>
   );
 }

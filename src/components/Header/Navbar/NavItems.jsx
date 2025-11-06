@@ -6,7 +6,6 @@ function NavItems (){
         <Nav className="ms-auto">
             <NavLink link = "#about" text = "About" />
             <NavLink link = "#projects" text = "Projects" />
-            <NavLink link = "#skills" text = "Skills" />
             <NavLink link = "#contact" text = "Contact" />
         </Nav>
     );

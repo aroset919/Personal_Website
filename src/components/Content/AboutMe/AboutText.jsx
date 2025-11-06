@@ -1,5 +1,5 @@
 function AboutText(props){
-    return (<p className="mt-3">{props.text}</p>);
+    return (<p className="mt-5 py-5 text-wrap">{props.text}</p>);
 }
 
 export default AboutText;

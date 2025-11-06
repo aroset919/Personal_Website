@@ -13,7 +13,7 @@ function Projects (props){
     return (
         <section id="projects" className="py-5 projects-section">
             <Container>
-            <h3 className="text-center mb-4">{props.sectionTitle}</h3>
+            <h2 className="text-center mb-4">{props.sectionTitle}</h2>
             <Row>
                 {projectArray.map((project, index) => {
                 return (

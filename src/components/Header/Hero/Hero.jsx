@@ -11,8 +11,10 @@ function Hero (props){
                 <Col  xs={12} sm={12} md={4}>
                     <HeroImg />
                 </Col>
-                <Col  xs={12} sm={12} md={8}>
-                    <HeroBox info={props.info}/>
+                <Col xs={0} sm={0} md={1}>
+                </Col>
+                <Col  xs={12} sm={12} md={6}>
+                    <HeroBox info={props.info} skillInfo={props.skillInfo}/>
                 </Col>
                 </Row>
             </Container>

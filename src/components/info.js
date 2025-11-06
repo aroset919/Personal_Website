@@ -1,42 +1,24 @@
 const Personal_Info = {
     fName: "Aleena",
     lName: "Torres",
-    introHead: `Hi I'm Aleena 👋`,
-    introText: "I’m a Software Developer passionate about building innovative apps, solving problems, and exploring new technologies. \
-                Come see if I could be a good fit for your team!",
+    introHead: `Aleena Torres 👋`,
+    introText: "Hi my name’s Aleena. I’m an avid gamer who decided to turn her hobby into a career. My passions include building RESTful systems, producing deliverables under pressure, and properly unit testing my work before submission. Ask me to join your next project!",
 }
 
 const About_Me = {
     title: "About Me",
-    content: {
-        s1: {
-            image: "/src/assets/gamejam.jpg",
-            alt: "Game Jam Group Photo",
-            text: "I’m an entry-level software developer with experience in full-stack development, SCRUM development cycle, and computer science fundamentals. \
-                I enjoy building applications that combine creativity with functionality.",
-        },
-        s2: {
-            image: "/src/assets/fullstack_udemy_assessment.jpg",
-            alt: "Udemy Test Score",
-            text: "My recent assessment on Udemy places me in in the 98th percentile of full-stack developers! \
-                Currently, I am aiming for my Master's Degree to enhance my skills.",
-        },
-        s3: {
-            image: "/src/assets/GREbook.jpg",
-            alt: "GRE Master's Test Prep Book",
-            text: "Currently, I am aiming for my Master's Degree. \
-                    I intend to take the opportunity to enhance my skills as a developer.",
-        },
-        
-        
-    },
+    content:
+        {
+            image: "/src/assets/aboutmepic.png",
+            alt: "1a. QA Role Image, 2b. Global Game Jam Logo, 3b. Game Controller",
+            text: "I have always loved engineering things, even from a young age. Today, I channel that energy into building software. I have experience in QA for three separate AAA titles grossing millions, built my own projects both independently and with a team, and completed my mastery of Full-Stack development. I am constantly on the lookout for new ideas and projects to bring to life. Whether I’m using SQL, React, Java, or C, I am confident in my ability to produce results.",
+        },        
 }
 
 const Contact_Info = {
     title: "Contact",
-    content: "Let’s connect! Feel free to reach out via email or LinkedIn."
+    content: "Let’s connect! Feel free to reach out to me via email or LinkedIn."
 }
-
 
 const Contact_Links = {
     Email: "mailto:aroset919@gmail.com",
@@ -90,13 +72,27 @@ const Credited_Projects = {
     },
 }
 
-const My_Skills = [
-    "JavaScript", 
-    "Python", 
-    "React", 
-    "Node.js", 
-    "SQL", 
-    "Cybersecurity"
-]
+const My_Skills = {
+    Languages: 
+        [
+            "JavaScript", 
+            "Java", 
+            "SQL",
+            "C / C++"
+        ],
+    Libraries:
+        [
+            "React",
+            "Node.js",
+            "Express.js",
+            "Axios"
+        ],
+    Tools:
+        [
+            "Jira",
+            "Hansoft",
+            "PostgreSQL"
+        ]
+}
 
 export {Personal_Info, About_Me, Contact_Info, Contact_Links, Personal_Projects, Credited_Projects, My_Skills}

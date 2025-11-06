@@ -1,10 +1,18 @@
-import {Image} from "react-bootstrap";
+import {Figure, Image} from "react-bootstrap";
 
 function AboutImg (props){
     return(
-        <Image src={props.img} 
+        <Figure className="float-right aboutImg">
+            <Image src={props.img} 
             alt={props.alt}
-            className={`${props.right ? "float-right" : "float-left"} aboutImg`} thumbnail fluid/>
+            className="border-0"
+            thumbnail fluid
+            />
+
+            <Figure.Caption>
+                {props.alt}
+            </Figure.Caption>
+        </Figure>
     );
 }
 

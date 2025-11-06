@@ -18,9 +18,12 @@ body {
 }
 
 .hero-section {
-  background-color: #1b1c66 !important;
+  background-image: url('/src/assets/backgroundimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
   color: #fff;
-  transition: background-color 0.5s ease;
   box-shadow: inset 0px -5px 10px -5px #7393B3;
 }
 
@@ -161,10 +164,19 @@ body {
 }
 
 .aboutImg{
-  max-width: 90%;
-  max-height: 70%;
+  max-width: 30%;
+  max-height: 30%;
   margin: 1.25rem;
   margin-bottom: 0;
+}
+
+.aboutImg img{
+  background-color: inherit;
+}
+
+.aboutImg figcaption{
+  color: inherit;
+  text-wrap: wrap;
 }
 
 .aboutme-section{
@@ -174,15 +186,38 @@ body {
   align-items: center;
 }
 
-.aboutme-section .row{
-  align-items: center;
+.a_section{
+  display: flex;
+  height: fit-content;
 }
 
 .aboutme-section p{
   text-align: left;
+  display: inline-block;
+  height: fit-content;
+  font-size: larger;
 }
 
-.aboutme-container{
-  margin: 0;
+.offcanvas{
+  max-width: 18%;
+  min-width: fit-content;
+}
 
+.offcanvas-header{
+  font-size: xx-large;
+}
+
+.offcanvas-body{
+  font-size: large;
+  margin-left: 10%;
+}
+
+.skill-header{
+  font-weight: bold;
+  margin-top: 7%;
+  margin-bottom: 5%
+}
+
+.skill-item{
+  margin-left: 10%;
 }

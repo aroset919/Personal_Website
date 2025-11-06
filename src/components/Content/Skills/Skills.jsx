@@ -1,21 +1,27 @@
-import {Container, Badge} from "react-bootstrap";
-import Skill_Item from "./Skill_Item";
+import {useState} from "react";
+import SkillsButton from "./SkillsButton";
+import Skill_Canvas from "./Skills_Canvas";
 
 /*Skills Section*/
 function Skills (props){
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  
   return (
-    <section id="skills" className="py-5">
-      <Container className="text-center">
-        <h3>Skills</h3>
-        <div className="mt-3 d-flex flex-wrap justify-content-center gap-2">
-          {props.info.map((skill, index) =>{
-            return (
-              <Skill_Item key={index} skill={skill} />
-            );
-          })}
-        </div>
-      </Container>
-    </section>
+    <div>
+      <SkillsButton 
+        btnText="View My Skills"
+        click={handleShow}
+      />
+
+      <Skill_Canvas 
+        close={handleClose}
+        show={show}
+        info = {props.info}
+      />
+    </div>
   );
 }
 
